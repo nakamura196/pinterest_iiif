@@ -36,16 +36,16 @@
   </head>
   <body class="text-center">
     <form class="form-signin" action="https://dh-p.herokuapp.com/pins">
-  <img class="mb-4" src="/docs/4.3/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
+
   <h1 class="h3 mb-3 font-weight-normal">Add pins from IIIF Manifest</h1>
-  <label for="inputEmail" class="sr-only">IIIF Manifest</label>
-  <input type="text" id="inputEmail" class="form-control" name="manifest" placeholder="IIIF Manifest" required autofocus>
+  <label for="inputEmail" class="sr-only">IIIF Manifest URI</label>
+  <input type="text" id="inputEmail" class="form-control" name="manifest" placeholder="IIIF Manifest URI" required autofocus>
   <label for="inputPassword" class="sr-only">board</label>
-  <input type="text" name="board" class="form-control" placeholder="aaa/bbb" value="na_kamura_1263/捃拾帖" required>
-  <label for="inputPassword" class="sr-only">access_token</label>
+  <input type="text" name="board" class="form-control" placeholder="board" required>
+  <label for="inputPassword" class="sr-only">access_token</label> <!-- value="na_kamura_1263/捃拾帖" -->
   <input type="text" name="access_token" class="form-control" placeholder="access_token" required>
   <label for="inputPassword" class="sr-only">Attribution</label>
-  <input type="text" name="attribution" class="form-control mb-3" placeholder="Attribution" value="東京大学総合図書館所蔵" required>
+  <input type="text" name="attribution" class="form-control mb-3" placeholder="Attribution" required> <!-- value="東京大学総合図書館所蔵" -->
 
   <button class="btn btn-lg btn-primary btn-block" type="submit">Upload</button>
   <p class="mt-5 mb-3 text-muted">Satoru Nakamura</p>
